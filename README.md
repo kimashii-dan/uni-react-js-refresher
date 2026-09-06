@@ -6,7 +6,7 @@ Warm-up before starting React. One page (`page.html`), one section per exercise 
 
 No build step, just open `page.html` in a browser.
 
-![demo](./quick-look.gif)
+![demo](./quick-look.png)
 
 ## Structure
 
