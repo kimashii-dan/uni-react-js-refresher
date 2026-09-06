@@ -1,0 +1,100 @@
+:root {
+  --bg: #f6f5f1;
+  --ink: #1c1c1a;
+  --muted: #6b6b63;
+  --line: #dcd9cf;
+  --accent: #9a3324;
+  --code-bg: #1c1c1a;
+  --code-ink: #e7e5dc;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 4rem 1.5rem 6rem;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+header {
+  max-width: 640px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--line);
+}
+
+header h1 {
+  margin: 0 0 0.75rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2.25rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  margin: 0 0 1.1rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+section h2 .num {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+section h2 .title {
+  color: var(--ink);
+}
+
+.output {
+  background: var(--code-bg);
+  color: var(--code-ink);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  padding: 1rem 1.1rem;
+  border-radius: 3px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.explain {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.explain p {
+  margin: 0.4rem 0;
+}
+
+.explain strong {
+  color: var(--ink);
+  font-weight: 600;
+}
